@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+header{
+
+    background-color: rgb(7, 19, 17);
+    color:rgb(242, 34, 69);
+    padding:10px 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.navbar{
+    list-style:none;
+    display: flex;
+    gap: 15px;
+
+}
+.navbar li a {
+    color: rgb(226, 37, 40);
+    text-decoration: wavy;
+    padding: 10px;
+
+}
+.navbar li a.active,
+.navbar li a:hover {
+    background: rgb(250, 213, 158);
+    color:rgb(222, 18, 18);
+    border-radius: 5px;
+}
+
+.menu-icon{
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: aliceblue;
+}
+#menu-toggle {
+    display: none;
+}
+#menu-toggle:checked + .menu-icon + .navbar {
+    display: block;
+    flex-direction: column;
+    background: skyblue;
+
+}
+@media(max-width: 768) {
+    .menu-icon {
+        display: block;
+
+    }
+    .navbar {
+        display: none;
+        width: 100%;
+
+    }
+    .navbar li{
+        text-align: center;
+    }
+}
+section .section-content h1 {
+    color: rgb(233, 20, 20);
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+section .section-content h2{
+    color: red;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+section .section-content h3{
+    color: red;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+section img {
+    height: 700px;
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+section img h2 {
+    height: 700px;
+    width: 900px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    background-color: black;
+    color: rgb(240, 28, 28);
+    padding: 20px;
+    text-align: center;
+}
+footer-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+.footer- col h4{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-coi ui{
+    list-style: none;
+    padding: 0;
+}
+.footer-col ul li {
+    margin: 10px 0;
+
+}
+.footer-col ui li a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+.footer-col ul li a :hover {
+    color: rgb(214, 20, 20);
+
+}
+.footer-col form{
+    margin-top: 10px;
+
+}
+.footer-col input{
+    padding: 10px;
+
+}
+.footer-col input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.footer-col button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+.footer-col button:hover {
+    background: rgb(212, 17, 17);
+}
